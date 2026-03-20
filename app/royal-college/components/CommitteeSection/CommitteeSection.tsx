@@ -3,45 +3,50 @@ import styles from "./CommitteeSection.module.css";
 const MEMBERS = [
     {
         image: "/images/committee/member1.png",
-        name: "ผศ.ดร.เภสัชกร ชลภัทร สุขเกษม",
+        name: "รศ.ดร.ภญ.นริศา คำแก่น",
         role: "ประธาน",
     },
     {
         image: "/images/committee/member2.png",
-        name: "รศ.ดร.ภญ.เมธาวี มาศคำ",
-        role: "ตำแหน่ง",
+        name: "ดร.ภญ.พิมพ์พิมล ตันสกุล",
+        role: "รองประธาน",
     },
     {
         image: "/images/committee/member3.png",
-        name: "ผศ.ดร.ภก.สุรศักดิ์ ชุมนุมวัฒน์",
+        name: "ผศ.ดร.ภก.วุฒิชัย วิสุทธิพรต",
         role: "เลขาธิการ",
     },
     {
         image: "/images/committee/member4.png",
-        name: "ภญ.สิริดา สุวรรณตำรวจ",
-        role: "เหรัญญิก",
+        name: "ดร.ภก.อดิศักดิ์ ถมอุดทา",
+        role: "นายทะเบียน",
     },
     {
         image: "/images/committee/member5.png",
-        name: "ผศ.ดร.ภก.ธีรศักดิ์ มาแจ้ม",
-        role: "บรรณาธิการ.",
+        name: "รศ.ดร.ภญ.ประสบอร รินทอง",
+        role: "เหรัญญิก.",
     },
     {
         image: "/images/committee/member6.png",
-        name: "ผศ.ดร.ภญ.วราลี ยอดสุรางค์",
-        role: "กรรมการกลาง",
+        name: "ภญ.ชวัลวลัย เมฆสวัสดิชัย",
+        role: "เหรัญญิก",
     },
     {
         image: "/images/committee/member7.png",
-        name: "ภก.ณัฐชัญ นันทธีนพงศ์",
-        role: "กรรมการกลาง",
+        name: "ภก.นฤทธิ์ เหลืองใส",
+        role: "นายทะเบียน",
+    },
+     {
+        image: "/images/committee/member8.png",
+        name: "ดร.ภญ.ผกากรอง ขวัญข้าว",
+        role: "นายทะเบียน",
     },
 ];
 
 export default function CommitteeSection() {
     const chairman = MEMBERS[0];
-    const row2 = MEMBERS.slice(1, 5);
-    const row3 = MEMBERS.slice(5, 7);
+    const row2 = MEMBERS.slice(1, 3);
+    const row3 = MEMBERS.slice(3, 8);
 
     return (
         <section className={styles.section}>
@@ -67,8 +72,8 @@ export default function CommitteeSection() {
                 </div>
             </div>
 
-            {/* ROW 2 - 4 members */}
-            <div className={styles.membersRow}>
+            {/* ROW 2 - 2 members */}
+            <div className={styles.membersRow} style={{ zIndex: 2 }}>
                 {row2.map((m, i) => (
                     <div key={i} className={styles.card}>
                         <div className={styles.photoArea}>
@@ -82,8 +87,8 @@ export default function CommitteeSection() {
                 ))}
             </div>
 
-            {/* ROW 3 - 2 members centered */}
-            <div className={styles.membersRow}>
+            {/* ROW 3 - 5 members */}
+            <div className={styles.membersRow} style={{ zIndex: 1, marginBottom: 0 }}>
                 {row3.map((m, i) => (
                     <div key={i} className={styles.card}>
                         <div className={styles.photoArea}>

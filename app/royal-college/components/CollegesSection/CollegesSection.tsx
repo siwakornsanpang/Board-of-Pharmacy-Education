@@ -5,11 +5,11 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import styles from "./CollegesSection.module.css";
 
 const CARDS = [
-    { id: 1, src: "/images/cardslice/card1.jpg" },
-    { id: 2, src: "/images/cardslice/card2.jpg" },
-    { id: 3, src: "/images/cardslice/card3.jpg" },
-    { id: 4, src: "/images/cardslice/card4.jpg" },
-    { id: 5, src: "/images/cardslice/card5.jpg" },
+    { id: 1, src: "/images/cardslice/cards1.jpg" },
+    { id: 2, src: "/images/cardslice/cards2.jpg" },
+    { id: 3, src: "/images/cardslice/cards3.jpg" },
+    { id: 4, src: "/images/cardslice/cards4.jpg" },
+    
 ];
 
 export default function CollegesSection() {
@@ -37,15 +37,13 @@ export default function CollegesSection() {
         <section className={styles.collegesSection}>
             <div className={styles.collegesHeader}>
                 <p className={styles.subtitle}>
-                    Highlight วิทยาลัยเภสัชพันธุศาสตร์และเภสัชกรรมแม่นยำ
+                    Highlight วิทยาลัยเภสัชกรรมสมุนไพร
                 </p>
                 <h2 className={styles.mainTitle}>
-                    "หยุดการแพ้ยารุนแรง เพิ่มประสิทธิภาพการรักษา <br />
-                    ด้วยนวัตกรรมเภสัชพันธุศาสตร์"
+                    "ยกระดับภูมิปัญญาไทย สู่มาตรฐานเภสัชกรรมสากล"
                 </h2>
                 <p className={styles.description}>
-                    เพราะร่างกายของทุกคนไม่เหมือนกัน วกพ. จึงให้ความสำคัญกับการวิจัยและพัฒนาแนวทางการตรวจยีนก่อนใช้ยา <br />
-                    เพื่อลดความเสี่ยงจากการแพ้ยาเฉียบพลัน และช่วยให้การรักษาสามารถหวังผลได้สูงสุดตั้งแต่วันแรกที่เริ่มยา
+                    วภส. มุ่งมั่นสร้างมาตรฐานการใช้ยาสมุนไพรในระบบสาธารณสุขไทย<br></br>ให้เป็นทางเลือกที่ปลอดภัยและมีประสิทธิภาพสูงสุดสำหรับทุกคน
                 </p>
             </div>
 

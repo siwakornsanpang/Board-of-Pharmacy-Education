@@ -42,16 +42,16 @@ export default function LocationSection() {
 
                 {/* LEFT: Image + text below */}
                 <div className={styles.leftColumn}>
-                    <img src="/images/location/img1.png" alt="Pharmacist" className={styles.mainImage} />
+                    <img src="/images/location/img1.jpg" alt="Pharmacist" className={styles.mainImage} />
                     <div className={styles.leftText}>
-                        <h3>วิทยาลัยเภสัชพันธุศาสตร์<br />และเภสัชกรรมแม่นยำ (วกพ.)</h3>
-                        <p>&quot;ถอดรหัสพันธุกรรม เพื่อคำตอบการรักษาที่แม่นยำ<br />และปลอดภัยที่สุดสำหรับผู้ป่วยเฉพาะราย&quot;</p>
+                        <h3>วิทยาลัยเภสัชกรรมสมุนไพร</h3>
+                        <p>“ผสานภูมิปัญญาสมุนไพรไทยกับองค์ความรู้ทางวิทยาศาสตร์<br></br>เพื่อสร้างระบบสุขภาพที่มั่นคงและยั่งยืน”</p>
                     </div>
                 </div>
 
                 {/* RIGHT: Full green contact card */}
                 <div className={styles.rightColumn}>
-                    <h2 className={styles.rightTitle}>วิทยาลัยเภสัชพันธุศาสตร์<br />และเภสัชกรรมแม่นยำ (วกพ.)</h2>
+                    <h2 className={styles.rightTitle}>วิทยาลัยเภสัชกรรมสมุนไพร</h2>
 
                     <div className={styles.contactList}>
 

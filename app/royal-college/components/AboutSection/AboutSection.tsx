@@ -16,9 +16,9 @@ export default function AboutSection() {
             className={styles.image}
           />
           <div className={styles.imageOverlay}>
-            <h3 className={styles.overlayTitle}>วิทยาลัยคุ้มครองผู้บริโภคด้านยา</h3>
+            <h3 className={styles.overlayTitle}>วิทยาลัยเภสัชกรรมสมุนไพร</h3>
             <p className={styles.overlaySubtitle}>
-              (The College of Pharmaceutical and Health Consumer Protection of Thailand : CPHCP)
+              College of Herbal Pharmacy of Thailand
             </p>
           </div>
         </div>
@@ -27,11 +27,13 @@ export default function AboutSection() {
       {/* Right Column: Text & Search */}
       <div className={styles.contentSection}>
         <h2 className={styles.headline}>
-          “วิทยาลัยเภสัชพันธุศาสตร์และเภสัชกรรมแม่นยำ (วภพ.) 
+          ศาสตร์สมุนไพรไทยสู่มาตรฐานวิชาชีพสากล
           
         </h2>
         <p className={styles.description}>
-          ยกระดับการบริบาลทางเภสัชกรรม สู่ยุคการแพทย์เฉพาะบุคคล (Personalized Medicine) เพื่อความปลอดภัยสูงสุดของผู้ป่วย
+         วิทยาลัยเภสัชกรรมสมุนไพรแห่งประเทศไทย เป็นองค์กรวิชาการภายใต้ราชวิทยาลัยเภสัชกรรมแห่งประเทศไทย 
+         ที่มุ่งพัฒนาความเชี่ยวชาญเฉพาะทางด้านเภสัชกรรมสมุนไพร
+          ส่งเสริมการวิจัยและนวัตกรรม เพื่อให้สมุนไพรไทยมีคุณภาพ มาตรฐาน และสามารถนำไปใช้ประโยชน์ได้อย่างปลอดภัยและยั่งยืน
         </p>
 
         {/* Search Card */}
