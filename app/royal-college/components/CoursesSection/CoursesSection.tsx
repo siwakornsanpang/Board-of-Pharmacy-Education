@@ -373,7 +373,7 @@ export default function CoursesSection() {
 
             {/*หลักระยะยาว*/}
             <div className={styles.rowHeader}>
-                <h2 className={styles.rowTitle}>หลักสูตรระยะสั้น</h2>
+                <h2 className={styles.rowTitle}>หลักสูตรระยะยาว</h2>
 
                 <button className={styles.viewAllBtn}>ดูทั้งหมด <FaChevronRight style={{ fontSize: '10px', marginLeft: '4px' }} /></button>
 
