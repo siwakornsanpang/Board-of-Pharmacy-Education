@@ -1,84 +1,68 @@
 import Image from "next/image";
 import styles from "./VisionMissionSection.module.css";
-import { FaGraduationCap, FaBookOpen, FaAward, FaBalanceScale, FaRegEye, FaShieldAlt } from "react-icons/fa";
 
 export default function VisionMissionSection() {
     return (
         <section className={styles.sectionContainer}>
             <div className={styles.headerArea}>
                 <h2 className={styles.mainHeading}>
-                    "มุ่งสู่ความเป็นเลิศในการพัฒนาวิชาชีพเภสัชกรรม<br />
-                    เพื่อสุขภาพที่ดีของประชาชนและสังคมไทยอย่างยั่งยืน"
+                    &quot;บ่มเพาะคุณภาพ สร้างมาตรฐาน:<br />
+                    บทบาทคณะกรรมการการศึกษาเภสัชศาสตร์ จากอดีตสู่อนาคต&quot;
                 </h2>
-                <p className={styles.subText}>
-                    ราชวิทยาลัยเภสัชกรรมแห่งประเทศไทย มีวิสัยทัศน์และพันธกิจที่สอดคล้องกับการพัฒนาวิชาชีพเภสัชกรรม ดังนี้
-                </p>
             </div>
 
-            <div className={styles.contentGrid}>
-                {/* LEFT COLUMN */}
-                <div className={styles.leftColumn}>
-                    <div className={styles.mainImageWrapper}>
+            <div className={styles.cardsContainer}>
+                {/* Vision Card */}
+                <div className={styles.card}>
+                    <div className={styles.cardContent}>
+                        <div className={styles.iconWrapper}>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 22V20H8V16H12V12H16V8H22V22H4Z" fill="#6A7432"/>
+                                <path d="M14 8V2H21L18 5L21 8H14Z" fill="#6A7432"/>
+                            </svg>
+                        </div>
+                        <h3 className={styles.cardTitle}>วิสัยทัศน์</h3>
+                        <p className={styles.cardText}>
+                            &quot;เป็นองค์กรที่ส่งเสริมความเข้มแข็งของการศึกษาเภสัชศาสตร์ที่ชี้นำสังคม<br />
+                            บนมาตรฐานวิชาชีพและจริยธรรม เน้นการจัดการที่เป็นภาคีเครือข่าย&quot;
+                        </p>
+                    </div>
+                    <div className={styles.imageWrapper}>
+                        <div className={styles.imageGradientOverlay}></div>
                         <Image
                             src="/images/vision/img1.png"
                             alt="Vision"
-                            width={480.5}
-                            height={275.25}
-                            className={styles.mainImage}
-                            priority
+                            fill
+                            className={styles.cardImage}
                         />
-                    </div>
-                    
-                    <div className={styles.leftCardsRow}>
-                        {/* Innovation Card (Olive) */}
-                        <div className={`${styles.smallCard} ${styles.oliveCard}`}>
-                            <div className={styles.smallCardIcon}><FaBookOpen size={28} /></div>
-                            <h3 className={styles.smallCardTitle}>นวัตกรรม</h3>
-                            <p className={styles.smallCardDesc}>บูรณาการความรู้และทักษะ</p>
-                        </div>
-
-                        {/* Evaluation Card (White) */}
-                        <div className={`${styles.smallCard} ${styles.whiteCard}`}>
-                            <div className={styles.smallCardIcon}><FaAward size={32} /></div>
-                            <h3 className={styles.smallCardTitle}>ประเมินผล</h3>
-                            <p className={styles.smallCardDesc}>รับรองคุณวุฒิวิชาชีพ</p>
-                        </div>
                     </div>
                 </div>
 
-                {/* RIGHT COLUMN */}
-                <div className={styles.rightColumn}>
-                    {/* Top half olive */}
-                    <div className={styles.rightCardTop}>
-                        <div className={styles.rightIconWrapper}>
-                            <FaGraduationCap size={32} />
+                {/* Mission Card */}
+                <div className={styles.card}>
+                    <div className={styles.cardContent}>
+                        <div className={styles.iconWrapper}>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 22H16V20H13V4H14V2H10V4H11V20H8V22Z" fill="#6A7432"/>
+                                <path d="M12 3H23L20 7L23 11H12V3Z" fill="#6A7432"/>
+                            </svg>
                         </div>
-                        <div className={styles.rightCardHeader}>
-                            <h3>พัฒนาหลักสูตรเฉพาะทาง</h3>
-                            <p>ควบคุมและรับรองโดยมาตรฐานสากล</p>
+                        <h3 className={styles.cardTitle}>พันธกิจ</h3>
+                        <div className={styles.missionList}>
+                            <p><strong>Standardization:</strong> สร้างหลักประกันให้กับสังคมด้านมาตรฐานวิชาชีพของหลักสูตรการศึกษาเภสัชศาสตร์</p>
+                            <p><strong>Quality Assurance:</strong> มีระบบการรับรองคุณภาพสถานบันการศึกษาและแหล่งฝึกปฎิบัติงานวิชาชีพ</p>
+                            <p><strong>Ethics &amp; Integrity:</strong> สร้างหลักประกันด้านคุณภาพและจริยธรรมของเภสัชกรใหม่ที่เข้าสู่วิชาชีพ</p>
+                            <p><strong>Collaboration:</strong> ดำเนินงานในลักษณะภาคีเครือข่ายร่วมกับสถาบันการศึกษาและหน่วยงานที่เกี่ยวข้อง</p>
                         </div>
                     </div>
-
-                    {/* Bottom half white */}
-                    <div className={styles.rightCardBottom}>
-                        <p className={styles.rightParagraph}>
-                            วิทยาลัยเภสัชกรรมแห่งอนาคต<br />
-                            มุ่งเน้นการพัฒนาระบบยาและสุขภาพที่ยั่งยืน<br />
-                            เสริมสร้างศักยภาพเภสัชกรให้มีความเชี่ยวชาญและสามารถตอบ<br />
-                            สนองต่อความต้องการด้านสุขภาพของประชาชน
-                        </p>
-                        
-                        <div className={styles.badgesWrapper}>
-                            <div className={styles.badgeItem}>
-                                <FaBalanceScale size={16} /> จริยธรรมเภสัชกรรม
-                            </div>
-                            <div className={styles.badgeItem}>
-                                <FaRegEye size={16} /> ส่งเสริมคุณภาพ
-                            </div>
-                            <div className={styles.badgeItem}>
-                                <FaShieldAlt size={16} /> สร้างความปลอดภัย
-                            </div>
-                        </div>
+                    <div className={styles.imageWrapper}>
+                        <div className={styles.imageGradientOverlay}></div>
+                        <Image
+                            src="/images/vision/img2.png"
+                            alt="Mission"
+                            fill
+                            className={`${styles.cardImage} ${styles.missionImage}`}
+                        />
                     </div>
                 </div>
             </div>

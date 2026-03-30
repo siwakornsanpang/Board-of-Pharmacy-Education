@@ -44,21 +44,21 @@ export default function LocationSection() {
                 <div className={styles.leftColumn}>
                     <img src="/images/location/img1.png" alt="Pharmacist" className={styles.mainImage} />
                     <div className={styles.leftText}>
-                        <h3>"เชื่อมต่อทุกการเรียนรู้ ประสานงานทุกภารกิจวิชาชีพ"</h3>
-                        <p>สำนักงานราชวิทยาลัยเภสัชกรรมแห่งประเทศไทย พร้อมเป็นศูนย์กลางสนับสนุนการยกระดับศักยภาพเภสัชกรไทยในทุกมิติ</p>
+                        <h3>"รากฐานที่มั่นคง สู่การเชื่อมโยงเครือข่ายวิชาชีพทั่วไทย"</h3>
+                        <p>เราพร้อมเป็นพื้นที่เปิดกว้างสำหรับการเรียนรู้ การประชุมสัมมนา และการสร้างสรรค์นวัตกรรมทางเภสัชกรรมเพื่อประโยชน์สูงสุดของเพื่อนร่วมวิชาชีพและประชาชน</p>
                     </div>
                 </div>
 
                 {/* RIGHT: Full green contact card */}
                 <div className={styles.rightColumn}>
-                    <h2 className={styles.rightTitle}>ราชวิทยาลัยเภสัชกรรมแห่งประเทศไทย</h2>
+                    <h2 className={styles.rightTitle}>คณะกรรมการการศึกษาเภสัชศาสตร์</h2>
 
                     <div className={styles.contactList}>
 
                         <div className={styles.contactItem}>
                             <div className={styles.contactIcon}><PinIcon /></div>
                             <div>
-                                <h4>ที่อยู่สำนักงานราชวิทยาลัยเภสัชกรรมแห่งประเทศไทย</h4>
+                                <h4>ที่อยู่คณะกรรมการการศึกษาเภสัชศาสตร์</h4>
                                 <p>88/19 อาคารมหิตลาธิเบศร ชั้น 8 กระทรวงสาธารณสุข<br />ถ. ติวานนท์ อำเภอเมืองนนทบุรี นนทบุรี 11000</p>
                             </div>
                         </div>
@@ -68,7 +68,8 @@ export default function LocationSection() {
                             <div className={styles.contactIcon}><PhoneIcon /></div>
                             <div>
                                 <h4>โทรศัพท์</h4>
-                                <p>02-591-9992 ต่อ 7</p>
+                                <p>02-591-9992 ต่อ 5</p>
+                                <p>02-591-9996</p>
                             </div>
                         </div>
 
@@ -76,7 +77,7 @@ export default function LocationSection() {
                             <div className={styles.contactIcon}><MailIcon /></div>
                             <div>
                                 <h4>อีเมล</h4>
-                                <p>thaicpgx@pharmacycouncil.org</p>
+                                <p>ph_exam@pharmacycouncil.org</p>
                             </div>
                         </div>
 

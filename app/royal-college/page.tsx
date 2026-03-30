@@ -4,7 +4,6 @@ import HistorySection from "./components/HistorySection/HistorySection";
 import HighlightSection from "./components/HighlightSection/HighlightSection";
 import MeetingsSection from "./components/MeetingsSection/MeetingsSection";
 import NewsSection from "./components/NewsSection/NewsSection";
-import CollegesSection from "./components/CollegesSection/CollegesSection";
 import RegistrationModal from "../components/ui/RegistrationModal";
 
 export default function RoyalCollegePage() {
@@ -15,7 +14,6 @@ export default function RoyalCollegePage() {
             <AboutSection />
             <HistorySection />
             <HighlightSection/>
-            <CollegesSection/>
             <MeetingsSection />
             <NewsSection />
         </div>

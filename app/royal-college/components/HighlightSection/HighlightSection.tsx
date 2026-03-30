@@ -7,27 +7,26 @@ const HighlightSection: React.FC = () => {
       {/* Left Content */}
       <div className={styles.leftContent}>
         <h3 className={styles.highlightLabel}>
-          Highlight ราชวิทยาลัยเภสัชกรรมแห่งประเทศไทย
+          Highlight คณะกรรมการการศึกษาเภสัชศาสตร์
         </h3>
         <h1 className={styles.mainHeading}>
-          ยกระดับวิชาชีพเภสัชกรรมไทย <br />
-          สู่มาตรฐานสากล
+          "เราคือผู้สร้างรากฐานที่มั่นคง<br></br>ให้กับอนาคตของเภสัชกรไทย"
         </h1>
       </div>
 
       {/* Right Content */}
       <div className={styles.rightContent}>
-        <h2 className={styles.rightHeader}>
-          ราชวิทยาลัยเภสัชกรรมแห่งประเทศไทย
-        </h2>
         <div className={styles.listContainer}>
-          <div className={styles.listItem}>องค์กรวิชาการระดับประเทศ</div>
-          <div className={styles.listItem}>พัฒนาหลักสูตรเฉพาะทาง (Specialized Training)</div>
-          <div className={styles.listItem}>มาตรฐานและการรับรอง (Accreditation & Credentialing)</div>
-          <div className={styles.listItem}>ขับเคลื่อนระบบสุขภาพด้วยข้อมูล (Data-driven Healthcare)</div>
-          <div className={styles.listItem}>เครือข่ายความร่วมมือระดับประเทศ</div>
-          <div className={styles.listItem}>พัฒนาเภสัชกรสู่อนาคต (Future-ready Pharmacists)</div>
+          <div className={styles.listItem}>มาตรฐานหลักสูตรระดับสากล (Global Standard)</div>
+          <div className={styles.listItem}>เครือข่ายสถาบันการศึกษา (Academic Network)</div>
+          <div className={styles.listItem}>การรับรองแหล่งฝึกปฏิบัติงาน (Certified Clerkship)</div>
+          <div className={styles.listItem}>นวัตกรรมการเรียนรู้ (Educational Innovation)</div>
+      
         </div>
+        <h2 className={styles.rightHeader}>
+          บทบาทและความน่าเชื่อถือ (Trust & Authority)
+        </h2>
+        
       </div>
     </section>
   );
