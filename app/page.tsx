@@ -1,4 +1,4 @@
-import RoyalCollegePage from "./royal-college/page";
+import RoyalCollegePage from "./board-of-pharmacy/page";
 
 export default function Home() {
   return <RoyalCollegePage />;
