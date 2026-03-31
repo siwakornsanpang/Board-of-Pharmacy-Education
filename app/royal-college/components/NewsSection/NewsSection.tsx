@@ -56,7 +56,7 @@ export default function NewsSection() {
 
                 {/* NEWS */}
                 <div className={styles.newsRowHeader}>
-                    <h2>ข่าวสาร</h2>
+                    <h2>ข่าวสารคณะกรรมการการศึกษาเภสัชศาสตร์</h2>
                     <span className={styles.viewAll}>ดูทั้งหมด &gt;</span>
                 </div>
 
