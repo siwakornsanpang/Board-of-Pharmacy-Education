@@ -1,17 +1,5 @@
 "use client";
-import { useState } from "react";
-import CommitteeSection from "../CommitteeSection/CommitteeSection";
-import LocationSection from "../LocationSection/LocationSection";
-import VisionMissionSection from "../VisionMissionSection/VisionMissionSection";
-
 import styles from "./HistorySection.module.css";
-
-const MENU_ITEMS = [
-    "ประวัติความเป็นมา",
-    "วิสัยทัศน์และพันธกิจ",
-    "คณะกรรมการ",
-    "สถานที่ตั้ง",
-];
 
 const TIMELINE_DATA = [
     {
@@ -46,37 +34,10 @@ const TIMELINE_DATA = [
     }
 ];
 
-
-
 export default function HistorySection() {
-    const [activeTab, setActiveTab] = useState(0);
-
     return (
-        <section className={styles.historySection}>
-
-            {/* LEFT MENU */}
-            <div className={styles.historyMenu}>
-                <h3>"เพราะอนาคตของวิชาชีพ...<br></br> เริ่มต้นที่การศึกษาชั้นเลิศ"</h3>
-
-                <ul>
-                    {MENU_ITEMS.map((item, index) => (
-                        <li
-                            key={index}
-                            className={`${styles.menuItem} ${activeTab === index ? styles.active : ""}`}
-                            onClick={() => setActiveTab(index)}
-                        >
-                            {item}
-                        </li>
-                    ))}
-                </ul>
-            </div>
-
-            {/* RIGHT CONTENT */}
-            <div className={styles.historyContent}>
-
-                {activeTab === 0 && (
-                    <>
-                        {/* HEADING */}
+        <>
+            {/* HEADING */}
                         <h2 className={styles.mainHeading}>
                             "จากรากฐานที่เข้มแข็ง สู่อนาคตที่ยั่งยืน: <br></br>สองทศวรรษแห่งการสร้างมาตรฐาน เพื่อบ่มเพาะเภสัชกรคุณภาพสู่สังคม"
                         </h2>
@@ -99,22 +60,6 @@ export default function HistorySection() {
                                 </div>
                             ))}
                         </div>
-
-                     
-                        
-                    </>
-                )}
-
-                {activeTab === 1 && <VisionMissionSection />}
-
-                {activeTab === 2 && <CommitteeSection />}
-
-
-
-                {activeTab === 3 && <LocationSection />}
-
-            </div>
-
-        </section>
+        </>
     );
 }
